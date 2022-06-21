@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable custom properties</title>
+    <style>
+        /* BY using the root we can create the globle variable */
+        :root{
+            /* here this is treated as a globle varible */
+            --box-color:yellow;
+            --danger-color:red;
+        }
+        .box{
+            /* This is used as a local variable */
+            /* --box-color:rgb(57, 216, 57); */
+            background-color: var(--box-color);
+            width: 200px;
+            height: 200px;
+            border: 7px solid var(--danger-color);
+            margin: 5px;
+           
+           
+            border-radius: 10px;
+           
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes</title>
+    <style>
+        body {
+            background-color: rgb(144, 144, 158);
+        }
+
+        .container {
+            background-color: rgb(8, 23, 235);
+        }
+
+        .box {
+            background-color: chocolate;
+
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: Raj1; */
+            animation-name: Raj2;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            /* animatio-delay means initially it makes delay */
+            animation-delay: 2s;
+            /* animation-direction: reverse; */
+
+            /* animation fill mode is forward means the animation after completion remain in the forward position */
+            /* animation-fill-mode: forwards; */
+
+            /* ease-in  means initially the animation going slow and at last it become faster */
+            /* animation-timing-function: ease-in; */
+
+            /* ease-out  means initially the animation going fast and at last it become slower */
+            /* animation-timing-function: ease-out; */
+
+            /* ease-in-out  means initially the animation going slow and inbetween it become faster and then at last it become slow again*/
+            /* animation-timing-function: ease-in-out; */
+           
+            /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            /* animation:Raj2 5s ease-in 2s 3 backwards; */
+
+
+        }
+
+        @keyframes Raj2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes Raj1 {
+            from {
+                width: 100px
+            }
+
+            to {
+                width: 1100px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+        .container {
+            display: flex;
+            background-color: rgb(229, 210, 243);
+            border-radius: 20px;
+        }
+
+        .card {
+            padding: 2rem;
+            margin: 15px;
+            border: 2px solid green;
+            border-radius: 15px;
+
+            /* 16px indicates the x-axis 14px indicates the y axis and 49px indicates the blur radius */
+            /* box-shadow: 16px 14px 49px rgb(12 7 7); */
+
+            /* 30px indicates the spread radius */
+            /* box-shadow: 16px 14px 49px  30px rgb(12 7 7); */
+
+            /* 0.5=alpha indicates the darkness percentage  */
+            /* box-shadow: 16px 14px 49px  30px rgba(122,2,5,0.5); */
+
+            /* inset is used to shading the color in the internal part of the card */
+            /* box-shadow: inset 10px 15px red; */
+
+            box-shadow: 16px 14px 49px rgb(12 7 7);
+        }
+
+        .card h2 {
+            text-shadow: 2px 2px rgb(102, 102, 101);
+        }
+
+        #card-1 {
+            background-color: maroon;
+        }
+
+        #card-2 {
+            background-color: mediumpurple;
+        }
+
+        #card-3 {
+            background-color: peru;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi minus facilis nisi maiores
+                atque? Omnis culpa maxime quidem quia ullam recusandae voluptatibus similique quod vero ab aperiam
+                perferendis, quos laboriosam cum numquam adipisci.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi minus facilis nisi maiores
+                atque? Omnis culpa maxime quidem quia ullam recusandae voluptatibus similique quod vero ab aperiam
+                perferendis, quos laboriosam cum numquam adipisci.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi minus facilis nisi maiores
+                atque? Omnis culpa maxime quidem quia ullam recusandae voluptatibus similique quod vero ab aperiam
+                perferendis, quos laboriosam cum numquam adipisci.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>card-4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi minus facilis nisi maiores
+                atque? Omnis culpa maxime quidem quia ullam recusandae voluptatibus similique quod vero ab aperiam
+                perferendis, quos laboriosam cum numquam adipisci.</p>
+        </div>
+    </div>
+</body>
+
+</html>

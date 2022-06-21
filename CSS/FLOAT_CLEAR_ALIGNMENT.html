@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        .container{
+            border: 3px solid rgb(6, 5, 10);
+            margin: auto;
+            width: 800px;
+            border-radius: 10px;
+        }
+        .item{
+            border: 3px solid rgb(69, 44, 180);
+            margin : 12px 14px;
+            padding: 10px 20px;
+            background-color:#ba8cf0;
+            border-radius: 5px;
+            grid-template-columns: repeat(auto-fit,minmax(200px,300px) );
+        }
+        body{
+            background-color: rgb(144, 139, 155);
+            /* text-align: right; */
+            text-align: left;
+            text-align: justify;
+            text-align: center;
+        }
+        #fruits{
+            float: left;
+            width: 40%;
+        }
+        #Computer{
+            /* clear:both; */
+            float: left;
+            width: 40%;
+        }
+        #laptop{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <div id ="fruits" class="item">
+            <h3>Fruits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore sed hic. Deleniti vero sint quasi quos, id . Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus et sit, quos exercitationem sed. Reprehenderit quia adipisci minima dignissimos commodi corrupti saepe, doloribus architecto veniam, magni, voluptates recusandae hic.
+            </p>
+          </div>
+          <div id ="Computer" class="item">
+            <h3>computer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore sed hic. Deleniti vero sint quasi quos, id voluptatum quisquam!</p>
+          </div>
+          <div id ="laptop" class="item">
+            <h3>laptop</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore sed hic. Deleniti vero sint quasi quos, id voluptatum quisquam!lorem10
+            </p>
+          </div>
+    </div>
+</body>
+</html>

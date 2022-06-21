@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .box{
+            border: 3px solid red;
+            width: 90px;
+            height: 90px;
+            background-color: turquoise;
+            margin: 5px;
+           
+        }
+        .container{
+            width:700px;
+            height: 500px;
+            display: flex;
+            border: 4px solid yellowgreen;
+          
+           /* flex-direction: column-reverse;
+           flex-direction: row-reverse;
+           flex-wrap: wrap; */
+
+           /* both flex-direwction amd wrap at one time */
+           flex-flow: row-reverse wrap;
+           text-align: center;
+           justify-content: center;
+           justify-content: space-between;
+           justify-content: space-evenly;
+           justify-content: space-around; 
+            align-items: center;
+           align-items: stretch;
+        }
+           #box1{
+               order: 5;
+               flex-grow: 2;
+               /* -ve number not allowed */
+           }
+           #box2{
+               order: 4;
+               flex-shrink: 3;
+               flex-basis: 50px;
+                 /* -ve number not allowed */
+           }
+           /* higher the order last the box come */
+       
+    </style>
+</head>
+<body>
+    <h1>The Flex </h1><div class="container">
+    <div class="box" id="box1">first box</div>
+    <div class="box" id="box2">second box</div>
+    <div class="box" id="box3">third box</div>
+    <div class="box" id="box4">fourth box</div>
+    <div class="box" id="box5">fifth box </div>
+    <div class="box" id="box6">sixth box</div>
+</div>
+</body>
+</html>

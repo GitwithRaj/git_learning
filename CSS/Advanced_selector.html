@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selector</title>
+    <style>
+        h1 {
+            background-color: yellowgreen;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+/* if p is contained by any div */
+        /* div p {
+            color: whitesmoke;
+            background-color: black;
+            font-size: x-large;
+        } */
+
+        /* Greater than sign indicates the direct child of the greater one */
+        /* div > p {
+            color: whitesmoke;
+            background-color: black;
+            font-size: x-large; */
+        /* } */
+
+        /* + sign indicates the just  previous parent of p is div */
+        div + p {
+            color: whitesmoke;
+            background-color: black;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> This is more on selector</h1>
+    <div class="container">
+        <div class="class">
+            <p>This is paragraph</p>
+            <ul>
+                <li>
+                    <p>This is a paragraph inside the list</p>
+                </li>
+            </ul>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p> this ia also a paragraph</p>
+</body>
+
+</html>

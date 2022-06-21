@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            background-color: blue;
+            color:white;
+            font-size: 60px;
+          text-align: center;
+          display: none;
+        }
+        @media (max-width:400px){
+            #box1{
+                display: block;
+                background-color: thistle;
+                color: yellow;
+            }
+        }
+        @media (min-width:400px) and (max-width:500px){
+            #box2{
+                display: block;
+                background-color: black;
+
+            }
+        }
+        @media (min-width:500px) and (max-width:600px){
+            #box3{
+                display: block;
+                background-color: yellowgreen;
+            }
+        }
+        @media (min-width:600px){
+            #box4{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek mobile hun</div>
+    <div class="box" id="box2">Mai ek Tablet hun</div>
+    <div class="box" id="box3">Mai ek computer hun</div>
+    <div class="box" id="box4">Mai ek widescreen computer hun</div>
+</body>
+</html>

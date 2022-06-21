@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template areas</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+
+    /* it is used as written three navbar in first line so in first row total area taken by navbar and in second row two0 section and one aside means two part take section and one part take aside */
+    grid-template-areas:
+    "navbar navbar navbar"
+    "section section aside";
+}
+.item{
+    background-color: sandybrown;
+    border: 2px solid green;
+    padding: 2rem;
+    font-size: x-large;
+}
+#navbar{
+    grid-area: navbar;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="item" id="navbar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est reiciendis minus repellat ipsam voluptatem voluptas, fuga ipsum molestiae incidunt sed! Sed quis incidunt laudantium iste natus magni officia ut deserunt impedit, quos doloribus modi non voluptates officiis, quod soluta? loerm</div>
+<div class="item" id="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id, consequuntur rem recusandae voluptatem atque veniam eius facere, dignissimos illum dolorem qui non voluptas! Velit, magnam animi facilis eligendi laborum, omnis aperiam fugiat delectus, exercitationem laboriosam numquam. At impedit officiis porro commodi minima consectetur harum deserunt. A deserunt quo incidunt.</div>
+<div class="item" id="aside">Lorem ipsum dolor sit amet.</div>
+
+    </div>
+</body>
+</html>

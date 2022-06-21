@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="container">
+        This is my container
+    </div>
+    <script>
+        let jsonobj ={
+            name:"Raj",
+            channel:"Raj Premium Movies",
+            friend:"Rishab Nigam",
+            food:"Bhindi"
+        }
+         console.log(jsonobj);
+
+// conversion of object to string using JSON.stringify
+        myjsonStr= JSON.stringify(jsonobj);
+        console.log(myjsonStr);
+
+        myjsonStr=myjsonStr.replace('Bhindi','Palak');
+        console.log(myjsonStr);
+
+        // conversion of string  to object using JSON.parse  
+        newjsonobj= JSON.parse(myjsonStr);
+        console.log(newjsonobj);
+    </script>
+</body>
+</html>

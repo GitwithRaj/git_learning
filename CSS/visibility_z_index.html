@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        #box1 {
+            background-color: black;
+            border-radius: 10px;
+            font-size: x-large;
+            color: thistle;
+        }
+
+        #box2 {
+            background-color: rgb(224, 33, 33);
+            position: relative;
+            left: 20px;
+            border-radius: 10px;
+            z-index: 60;
+            /* visibility: hidden; */
+            /* hidden:will hide the element but show empty space */
+
+            /* display:none; */
+            /* display :none ;will hide the element and space too */
+            font-size: x-large;
+
+        }
+
+        #box3 {
+            background-color: rgb(78, 16, 223);
+            border-radius: 10px;
+            position: relative;
+            right: 20px;
+            font-size: x-large;
+            z-index: 80;
+            /* the box has higher z-index value is overlap on the other  */
+            /* z-index cannot work on the normal condition we ahve to choose the position,relative or absolute or other */
+        }
+
+        #box4 {
+            background-color: yellowgreen;
+            border-radius: 10px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Z-Index</div>
+    <div class="box" id="box2">Z-Index</div>
+    <div class="box" id="box3">Z-Index</div>
+    <div class="box" id="box4">Z-Index</div>
+</body>
+
+</html>

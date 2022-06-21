@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script type="text/javascript">
+        var x={name:'rak',age:21};
+        var y=JSON.stringify(x);
+        // JSON.stringfy is used to convert javascript obj to json file here isjavascript obj and y is json file
+        document.getElementById('demo3').innerHTML=x;
+        localStorage.setItem("test",y);
+        // localStorage.setItem is used to set  the item in the local storage
+        var z=localStorage.getItem("test");
+        //localStorage.getItem is used to get the data from the local storage
+        document.getElementById("demo1").innerHTML=z;
+   let p=JSON.parse(z);
+   //JSON.parse is used to convert the json file to javascript obj here z is json file and p is javascript obj.
+        document.getElementById("demo").innerHTML=p;
+        document.getElementById("demo4").innerHTML=p.name;
+        //we can also get data from obj by using '.' as shown up
+        
+    </script>
+</body>
+</html>

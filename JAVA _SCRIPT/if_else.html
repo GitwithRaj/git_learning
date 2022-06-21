@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else condition</title>
+</head>
+
+<body>
+    <!-- div>ul>li{item-$}*5 -->
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </div>
+    <script>
+        // var a=7;
+        // var a=6;
+        // console.log(a);
+
+        // let is a another way of declare variable
+        // let a = 7;
+        // let a = 6;
+        // console.log(a);
+        // let is preferable to use let in place of var 
+        const a = "This cannot be changed";
+        // a="very wrong way";
+        console.log(a);
+
+        let age = 50;
+        if (age > 18 && age < 25) {
+            console.log("you can vote");
+        }
+        else if (age > 25) {
+            console.log("you can stand  as candidate");
+        }
+        else {
+            console.log("you cannot vote");
+        }
+
+        const cups = 45;
+        switch (cups) {
+            case 40:
+                console.log("the value of the cups is 40");
+                break;
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+            default:
+                console.log("The value is neither 40 nor 42");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            font-size: 30px;
+            color: rgb(8, 1, 1);
+            background-image: url(https://images.unsplash.com/photo-1640627979404-399708b0296a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+            
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid rgb(194, 171, 247);
+            border-radius: 10px;
+        }
+        li{
+            list-style: none;
+            margin: 30px;
+            text-align: center;
+           
+        }
+        .navigation{
+            display: flex;
+            /* flex-direction: column; */
+          
+        }
+        section::before{
+            content: "This is before pseudo selector"
+        }
+        section::after{
+            content: "This is after pseudo selector"
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul class=navigation>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to coding world </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione odio amet dolor laborum,
+                quibusdam dolores quis assumenda, temporibus inventore aliquid esse. Ullam sapiente itaque non enim aut
+                culpa corrupti pariatur perferendis doloribus? Iusto, nemo.</p>
+        </section>
+    </header>
+</body>
+
+</html>

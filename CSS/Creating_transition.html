@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating CSS transition</title>
+    <style>
+        .box {
+            width: 200px;
+            color: dodgerblue;
+            height: 200px;
+            background-color: darkkhaki;
+            text-align: center;
+            transition-duration: 6s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in;
+            
+            /* in one line all the property can be made all means all the transtion transition-property in box : hover can apply  */
+            /* transition:all 2s ease-in 3s ; */
+        }
+
+        .box:hover {
+            background-color: rgb(6, 10, 10);
+            height: 500px;
+            width: 500px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Transition in CSS</h1>
+    <div class="box">
+        <p>Transition property</p>
+    </div>
+</body>
+
+</html>

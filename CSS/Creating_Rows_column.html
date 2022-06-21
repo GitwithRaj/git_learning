@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid rows and column</title>
+    <style>
+.grid{
+    display: grid;
+
+    /* this is make grid for first three and remaining are by default 1fr */
+    grid-template-rows: 1fr 1fr 3fr;
+
+   /* for those which are remaning as in this case it allow for from fourth to tenth */
+    grid-auto-rows:2fr ;
+
+    grid-template-columns: 3fr 2fr 6fr;
+    grid-gap: 1rem;
+}
+.box{
+    background-color: blue;
+    border: 2px solid red;
+}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box 1</div>
+        <div class="box">This is box 2</div>
+        <div class="box">This is box 3</div>
+        <div class="box">This is box 4</div>
+        <div class="box">This is box 5</div>
+        <div class="box">This is box 6</div>
+        <div class="box">This is box 7</div>
+        <div class="box">This is box 8</div>
+        <div class="box">This is box 9</div>
+        <div class="box">This is box 10</div>
+    </div>
+</body>
+</html>
